@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Header from "./components/header";
-import { hot } from 'react-hot-loader';
+// import { hot } from 'react-hot-loader';
 
 // let App=hot(module)(Header);
 
