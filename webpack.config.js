@@ -1,7 +1,8 @@
 const path=require("path");
 const outputDir="./build/";
 const webpack=require("webpack");
-var ExtractTextPlugin = require("extract-text-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
 const isDevBuild = true;
 
 module.exports={
@@ -29,18 +30,19 @@ module.exports={
                 loader:"babel-loader"
             },
             {
-                test:/\.css(\?|$)/,
-                include:[
-                    path.resolve(__dirname,"src")
-                ],
-                exclude:[
-                    path.resolve(__dirname,"node_modules")
-                ],
-                loader:ExtractTextPlugin.extract({
-                    fallback: 'style-loader',
-                    use: ['css-loader']
-                })
-            }
+                test: /\.css$/,
+                use: [
+                  {
+                    loader: MiniCssExtractPlugin.loader,
+                    options: {
+                      // you can specify a publicPath here
+                      // by default it use publicPath in webpackOptions.output
+                      publicPath: 'public'
+                    }
+                  },
+                  "css-loader"
+                ]
+              }
         ]
     },
     plugins: [
@@ -49,7 +51,14 @@ module.exports={
             manifest: require('./public/vendor-manifest.json')
         }),
         new webpack.HotModuleReplacementPlugin(),
-        new ExtractTextPlugin('[name].css',{allChunks: true})
+        new MiniCssExtractPlugin({
+            // Options similar to the same options in webpackOptions.output
+            // both options are optional
+            filename: "[name].css",
+            chunkFilename: "[id].css"
+          })
+      
+        //new ExtractTextPlugin('[name].css',{allChunks: true})
     ].concat(isDevBuild ? [
         // new webpack.SourceMapDevToolPlugin({
         //     filename: '[file].map', 
