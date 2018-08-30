@@ -6,6 +6,7 @@ const isDevBuild = true;
 
 module.exports={
     mode:"development",
+    devtool: "source-map",
     entry:{
         main:"./src/index.js"
     },
@@ -47,18 +48,19 @@ module.exports={
             context: __dirname,
             manifest: require('./public/vendor-manifest.json')
         }),
+        new webpack.HotModuleReplacementPlugin(),
         new ExtractTextPlugin('[name].css',{allChunks: true})
     ].concat(isDevBuild ? [
-        new webpack.SourceMapDevToolPlugin({
-            filename: '[file].map', 
-            moduleFilenameTemplate: path.relative("./build", '[resourcePath]')
-        })
+        // new webpack.SourceMapDevToolPlugin({
+        //     filename: '[file].map', 
+        //     moduleFilenameTemplate: path.relative("./build", '[resourcePath]')
+        // })
     ] : [
         // Plugins that apply in production builds only
         new webpack.optimize.UglifyJsPlugin(),
     ]),
     devServer: {
         contentBase: "./public",
-        // hotOnly: true
+         hot: true
       }
 }
