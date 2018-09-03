@@ -7,9 +7,25 @@
 
 .header-1 {
     height: 67px;
-    width: 10%;
-    float: left;
     line-height: 67px;
     text-align: center;
-    font-size: large;
+    font-size: 15px;
+}
+.header-pc-1 {
+    height: 67px;
+    width: 20%;
+    padding-left: 25px;
+    line-height: 67px;
+    text-align: left;
+    font-size: 15px;
+    float: left;
+}
+.header-pc-2 {
+    height: 67px;
+    width: 20%;
+    padding-right: 25px;
+    line-height: 67px;
+    text-align: right;
+    font-size: 15px;
+    float: right;
 }

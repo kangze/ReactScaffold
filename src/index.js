@@ -7,10 +7,15 @@ import { hot } from 'react-hot-loader';
 
 require("./index.css");
 initializeIcons();
-ReactDOM.render(
+
+const Index = () => (
     <Fabric>
         <Header />
     </Fabric>
+);
+
+ReactDOM.render(
+    <Index/>
     ,
     document.getElementById("react-app")
 );
