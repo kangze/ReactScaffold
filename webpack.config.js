@@ -14,7 +14,7 @@ module.exports={
     output:{
         path:path.resolve(__dirname,outputDir),
         filename:"[name].js",
-        publicPath:"/build/",
+        publicPath:"/build/"
     },
     resolve: { extensions: ['.web.js', '.js', '.json', ".jsx"] },
     module:{
@@ -37,7 +37,7 @@ module.exports={
                     options: {
                       // you can specify a publicPath here
                       // by default it use publicPath in webpackOptions.output
-                      publicPath: 'public'
+                      publicPath: 'build'
                     }
                   },
                   "css-loader"

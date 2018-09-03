@@ -1,18 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Header from "./components/header";
+import { Fabric } from 'office-ui-fabric-react/lib/Fabric';
+import Header from "./components/_shared/header";
+import { initializeIcons } from '@uifabric/icons';
 import { hot } from 'react-hot-loader';
 
-// let App=hot(module)(Header);
-
-// ReactDOM.render(
-//     <App/>,
-//     document.getElementById("react-app")
-// );
-
+require("./index.css");
+initializeIcons();
 ReactDOM.render(
-    <Header />,
-    document.getElementById("react-app") 
+    <Fabric>
+        <Header />
+    </Fabric>
+    ,
+    document.getElementById("react-app")
 );
 
 module.hot.accept();

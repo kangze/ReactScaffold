@@ -24,7 +24,7 @@
     "babel-preset-stage-2": "^6.24.1",
     "css-loader": "^1.0.0",
     "less-loader": "^4.1.0",
-    "office-ui-fabric-react": "^6.58.0",
+    "office-ui-fabric-react": "^6.61.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "style-loader": "^0.21.0",

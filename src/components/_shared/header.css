@@ -1,0 +1,15 @@
+.header {
+    height: 67px;
+    width: 100%;
+    box-shadow: 0px 3px 5px #c2bbbb;
+    background-color: #7d8793;
+}
+
+.header-1 {
+    height: 67px;
+    width: 10%;
+    float: left;
+    line-height: 67px;
+    text-align: center;
+    font-size: large;
+}
