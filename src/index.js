@@ -5,6 +5,7 @@ import { initializeIcons } from '@uifabric/icons';
 import { hot } from 'react-hot-loader';
 
 import Header from "./components/_shared/header";
+import PublishBox from "./components/PublishBox/PublishBox";
 import Layout from "./components/Layout";
 
 require("./index.css");
@@ -14,6 +15,7 @@ const Index = () => (
     <Fabric>
         <Layout>
             <Header />
+            <PublishBox />
         </Layout>
     </Fabric>
 );

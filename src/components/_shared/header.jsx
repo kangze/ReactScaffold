@@ -31,7 +31,7 @@ export default class Header extends Component {
 
         return (
             <div className="ms-Grid-row">
-                <div className="mobile ms-Grid-col ms-sm12 ms-hiddenMdUp">
+                <div className="ms-Grid-col ms-sm12 ms-hiddenMdUp">
                     <div className="header">
                         <div className="header-1">
                             <i className="ms-Icon ms-Icon--Bold" aria-hidden="true" />
@@ -39,7 +39,7 @@ export default class Header extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="mobile ms-Grid-col ms-hiddenSm ms-md12">
+                <div className="ms-Grid-col ms-hiddenSm ms-md12">
                     <div className="header">
                         <div className="header-pc-1">
                             <i className="ms-Icon ms-Icon--Bold" aria-hidden="true" />
