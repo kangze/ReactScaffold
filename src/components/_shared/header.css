@@ -13,16 +13,22 @@
 }
 .header-pc-1 {
     height: 67px;
-    width: 20%;
+    width: 40%;
     padding-left: 25px;
     line-height: 67px;
     text-align: left;
     font-size: 15px;
     float: left;
 }
+.account{
+    height: 67px;
+    line-height: 67px;
+    text-align: left;
+    font-size: 15px;
+}
 .header-pc-2 {
     height: 67px;
-    width: 20%;
+    width: 40%;
     padding-right: 25px;
     line-height: 67px;
     text-align: right;
