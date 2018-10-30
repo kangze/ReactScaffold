@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server  --open"
   },
   "keywords": [
     "sample"
@@ -22,26 +22,27 @@
     "babel-preset-stage-0": "^6.24.1",
     "babel-preset-stage-1": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
-    "css-loader": "^1.0.0",
+    "css-loader": "^1.0.1",
     "file-loader": "^2.0.0",
     "font-awesome": "^4.7.0",
     "jquery": "^3.3.1",
     "less": "^3.8.1",
     "less-loader": "^4.1.0",
-    "office-ui-fabric-react": "^6.65.0",
-    "react": "^16.5.0",
-    "react-dom": "^16.5.0",
-    "react-froala-wysiwyg": "^2.8.4",
+    "office-ui-fabric-react": "^6.94.0",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "react-froala-wysiwyg": "^2.8.5",
     "style-loader": "^0.21.0",
-    "url-loader": "^1.1.1",
-    "webpack": "^4.17.2",
-    "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.8"
+    "url-loader": "^1.1.2",
+    "webpack": "^4.23.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
   },
   "devDependencies": {
     "eslint-scope": "^4.0.0",
-    "mini-css-extract-plugin": "^0.4.2",
-    "react-hot-loader": "^4.3.6",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "mini-css-extract-plugin": "^0.4.4",
+    "react-hot-loader": "^4.3.11",
     "webpack-log": "^2.0.0"
   }
 }
